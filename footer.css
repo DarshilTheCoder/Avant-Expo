@@ -4,16 +4,14 @@
     box-sizing: border-box;
 }
 
-main {
-    background-color: red;
-    height: 55vh;
-}
+
 
 footer {
     background-color: rgba(6, 22, 110, 1);
     height: fit-content;
     overflow: hidden;
     padding-top: 2rem;
+    
 }
 
 .footer {

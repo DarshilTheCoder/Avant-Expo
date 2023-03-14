@@ -5,10 +5,8 @@
     letter-spacing: 1px;
     font-weight: 300;
 }
-body{
-    overflow-x: hidden;
-}
-nav{
+
+.nav{
     height: 6rem;
     width: 100vw;
     background-color:white;
@@ -149,7 +147,7 @@ nav{
         padding: 0 5px;
         font-size: 15px;
     }
-    nav{
+    .nav{
         position: fixed;
         z-index: 3;
     }
