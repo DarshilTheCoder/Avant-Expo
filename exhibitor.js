@@ -1,29 +1,30 @@
-$.fn.jQuerySimpleCounter = function( options ) {
-    var settings = $.extend({
-        start:  0,
-        end:    100,
-        easing: 'swing',
-        duration: 400,
-        complete: ''
-    }, options );
+const counters = document.querySelectorAll('.counter');
+const speed = 200; // The lower the slower
 
-    var thisElement = $(this);
+counters.forEach(counter => {
+	const updateCount = () => {
+		const target = +counter.getAttribute('data-target');
+		const count = +counter.innerText;
 
-    $({count: settings.start}).animate({count: settings.end}, {
-        duration: settings.duration,
-        easing: settings.easing,
-        step: function() {
-            var mathCount = Math.ceil(this.count);
-            thisElement.text(mathCount);
-        },
-        complete: settings.complete
-    });
-};
+		// Lower inc to slow and higher to slow
+		const inc = target / speed;
 
+		// console.log(inc);
+		// console.log(count);
 
-$('#number1').jQuerySimpleCounter({end: 12,duration: 3000});
-$('#number2').jQuerySimpleCounter({end: 55,duration: 3000});
-$('#number3').jQuerySimpleCounter({end: 359,duration: 2000});
+		// Check if target is reached
+		if (count < target) {
+			// Add inc to count and output in counter
+			counter.innerText = count + inc;
+			// Call function every ms
+			setTimeout(updateCount, 1);
+		} else {
+			counter.innerText = target;
+		}
+	};
+
+	updateCount();
+});
 
 
 
