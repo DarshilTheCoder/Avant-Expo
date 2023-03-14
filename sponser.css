@@ -1,0 +1,5 @@
+section .sponserimg{
+    border: 2px solid black;
+    padding-top: 9rem;
+    transform: scale(1.3);
+}
