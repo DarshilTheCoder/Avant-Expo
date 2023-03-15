@@ -7,6 +7,10 @@
     font-size: 5rem;
     padding: 1rem 0rem;
 }
+.team{
+    background: #081A7A;
+    color: white;
+}
 
 .team img{
     border-radius: 50%;
