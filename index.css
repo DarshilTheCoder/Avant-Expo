@@ -63,7 +63,7 @@ body{
 
 }
 
-
+/* 
 .carousel-inner::after{
     content: 'PARTICIPATE';
     width: 165px;
@@ -78,7 +78,7 @@ body{
     z-index: 1;
     padding: 9px;
     
-}
+} */
 
 .about{
     overflow: hidden;
