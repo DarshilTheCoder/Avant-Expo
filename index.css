@@ -199,6 +199,8 @@ margin: auto;
 
 .newslettersection{
     transform: scale(1.1);
+    overflow: hidden;
+    margin: 0;
 }
 .newsletterimg{
     display: grid;
@@ -206,6 +208,12 @@ margin: auto;
     transform: scale(0.7);
     position: relative;
 }
+
+.newsletterimg1{
+    /* overflow: hidden; */
+}
+
+
 
 .newsletterimg::before{
     content: '';
